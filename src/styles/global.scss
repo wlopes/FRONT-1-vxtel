@@ -1,7 +1,9 @@
-$primary-color: #f231a5;
-$secondary-color: #3cd3c1;
-$text-light: #fff;
-$background: #121214;
+:root {
+  --primary-color: #f231a5;
+  --secondary-color: #3cd3c1;
+  --text-light: #fff;
+  --background: #121214;
+}
 
 * {
   box-sizing: border-box;
@@ -14,8 +16,8 @@ html {
 }
 
 body {
-  color: $text-light;
-  background: $background;
+  color: var(--text-light);
+  background: var(--background);
 }
 
 body,
