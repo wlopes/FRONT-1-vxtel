@@ -6,9 +6,15 @@
   border: 0;
   transition: filter 0.2s ease-in-out;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 
   &:hover {
     filter: brightness(0.9);
+  }
+
+  > span {
+    color: var(--text-light);
+    font: 500 1.6rem 'Roboto', sans-serif;
   }
 }
 
@@ -23,12 +29,19 @@
 .button-outline {
   background: transparent;
   border: 1px solid var(--text-dark);
-  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
-  color: var(--text-dark);
+  transition: border 0.2s ease-in-out;
+
+  > span {
+    color: var(--text-dark);
+    transition: color 0.2s ease-in-out;
+  }
 
   &:hover {
-    color: var(--text-light);
-    background: var(--neutral-500);
+    border: 1px solid var(--neutral-500);
+  }
+
+  &:hover > span {
+    color: var(--neutral-500);
   }
 }
 
