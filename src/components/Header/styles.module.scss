@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: var(--primary-color);
+  height: 8.9rem;
+  padding: 0 8%;
+
+  h2 {
+    color: var(--text-light);
+    font: 400 3.6rem var(--font-main);
+  }
+}
