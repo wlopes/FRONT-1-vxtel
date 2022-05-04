@@ -1,4 +1,4 @@
-const columns = [
+export const columns = [
   'Origem',
   'Destino',
   'Tempo',
@@ -7,7 +7,7 @@ const columns = [
   'Sem FaleMais',
 ]
 
-const data = [
+export const data = [
   {
     Origem: '01',
     Destino: '02',
@@ -33,5 +33,3 @@ const data = [
     'Sem FaleMais': 'R$15.56',
   },
 ] as Record<string, string>[]
-
-return <Table columns={columns} data={data} />
