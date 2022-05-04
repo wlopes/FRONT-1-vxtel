@@ -1,0 +1,19 @@
+.customTable{
+  margin:0 auto;
+  border-spacing: 0px;
+  border: 1px solid black;
+
+  td, th{
+    padding:8px;    
+    text-align: center;
+    border: 1px solid black;
+    min-width: 120px;
+  }  
+
+  th{
+    background-color: var(--primary-color);
+    color:var(--text-light);
+    font-weight: 700;
+  } 
+}
+
